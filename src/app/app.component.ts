@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NEVER } from 'rxjs';
+// import { NEVER } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,18 +9,19 @@ import { NEVER } from 'rxjs';
 export class AppComponent {
   /* An empty array that is responsible
 	to add a division */
- items = [];
+ items = Array();
 
   /* A two-way binding performed which
 	pushes text on division */
- newTask:any
+
+  newTask:any
 
   /* When input is empty, it will
 	not create a new division */
    addToList() {
     if (this.newTask == '') {
     } else {
-      // this.items.push(this.newTask);
+      this.items.push(this.newTask);
       this.newTask = '';
     }
   }
