@@ -20,7 +20,7 @@ export class AppComponent {
   public addToList() {
     if (this.newTask == '') {
     } else {
-      // this.items.push(this.newTask:NEVER[]);
+      // this.items.push(this.newTask);
       this.newTask = '';
     }
   }
