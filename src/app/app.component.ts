@@ -9,15 +9,15 @@ import { NEVER } from 'rxjs';
 export class AppComponent {
   /* An empty array that is responsible
 	to add a division */
-  public items = [];
+ items = [];
 
   /* A two-way binding performed which
 	pushes text on division */
-  public newTask: any;
+ newTask:any
 
   /* When input is empty, it will
 	not create a new division */
-  public addToList() {
+   addToList() {
     if (this.newTask == '') {
     } else {
       // this.items.push(this.newTask);
